@@ -1,4 +1,4 @@
-# ChatGPT Writer Take-Home Coding Assignment
+# ChatGPT Writer  Assignment
 
 This is a [Plasmo extension](https://docs.plasmo.com/) project bootstrapped with command: `pnpm create plasmo --with-tailwindcss`.
 
@@ -16,13 +16,62 @@ See how to load the extension: https://docs.plasmo.com/framework/workflows/dev#l
 
 For further guidance, [visit our Documentation](https://docs.plasmo.com/).
 
-## Where to edit?
+## Assignment Demonstration
 
-- The main code is located in src/content.tsx. By default, when you run the extension, it displays a static count button on the LinkedIn website. You need to replace it with your own code.
 
-![count btn on linkedin](count_btn_on_linkedin.png)
+https://github.com/dasariabhiram/chatgptWriter-assignment/assets/121662792/7c546a77-a84c-49c4-9b9e-5ab56bc33b0c
 
-## Making production build
+Overview
+PlasmoOverlay is a specialized React component designed to overlay on LinkedIn web pages, enhancing messaging interactions. It incorporates the following features:
+
+# Features
+
+### LinkedIn Integration
+
+Specifically designed for LinkedIn, matching URLs with the pattern "https://*.linkedin.com/*"
+
+
+### Dynamic Styling
+
+Imports external styles dynamically from "style.css".
+
+## Icon Integration
+
+Adds an  icon (Vector.png) to the message box for visual cues.
+
+## Popup Interaction
+
+Triggered by clicking the emoji icon, providing options for response generation.
+
+## Response Generation
+
+Users can generate responses and insert them into the message box.
+
+## Message Box Enhancements
+
+Dynamically adds/removes an emoji element based on focus.
+Updates the message box placeholder dynamically.
+
+## Message Insertion
+
+Allows inserting pre-defined responses into the message box.
+
+## Styling and Layout
+
+Utilizes Tailwind CSS for clean and responsive design.
+## Event Handling
+
+Listens for various events, such as clicking outside the popup to close it.
+
+## Cleanup
+
+Utilizes useEffect for proper cleanup, preventing memory leaks.
+
+
+
+
+
+# Making production build
 
 Run the following:
 
